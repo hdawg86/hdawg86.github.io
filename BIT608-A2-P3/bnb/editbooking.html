@@ -1,0 +1,57 @@
+<!-- Assumptions -->
+<!-- The customer is logged in.
+h2 will include customers name in place of test.
+roomid will populate with available rooms for selected date range.-->
+
+<!DOCTYPE HTML>
+<html><head><title>Edit a Booking</title> </head>
+<body>
+
+<h1>Edit a booking</h1>
+<h2><a href='bookingslisting.php'>[Return to the Bookings listing]</a><a href='/bnb/'>[Return to the main page]</a></h2>
+
+<h2>Booking made for Test</h2>
+
+<form method="POST" action="makebooking.php">
+  <p>
+    <label for="roomid">Room (name,type,beds): </label>
+    <select type="int" id="roomid" name="roomid" required>
+        <option value="1">Kellie, S, 5</option> 
+        <option value="2">Herman, D, 5</option> 
+        <option value="3">Scarlett, D, 2</option> 
+        <option value="4">Jelani, S, 2</option> 
+        <option value="5">Sonya, S, 5</option> 
+        <option value="6">Miranda, S, 4</option> 
+        <option value="7">Helen, S, 2</option> 
+        <option value="8">Octavia, D, 3</option> 
+        <option value="9">Gretchen, D, 3</option> 
+        <option value="10">Bernard, S, 5</option> 
+        <option value="11">Dacey, D, 2</option> 
+        <option value="12">Preston, D, 2</option> 
+        <option value="13">Dane, S, 4</option> 
+        <option value="14">Cole, S, 1</option> 
+        Kellie, S, 5
+    </select>
+  </p> 
+  <p>
+    <label for="checkin_date">Checkin date: </label>
+    <input type="date" id="checkin_date" name="checkin_date" value="2018-09-15" required>
+  </p>  
+  <p>  
+    <label for="checkout_date">Checkout date: </label>
+    <input type="date" id="checkout_date" name="checkout_date" value="2018-09-19" required> 
+   </p>
+  <p>
+    <label for="Contact_number">Contact number: </label>
+    <input type="text" id="Contact_number" name="Contact_number" minlength="10" maxlength="17" placeholder="(###) ###-###" value="(001) 123-1234" pattern="^\([0-9]{3}\) [0-9]{3}-[0-9]{4}" required> 
+  </p> 
+  <p>
+    <label for="booking_extras">Booking extras: </label>
+    <textarea type="text" id="booking_extras" name="booking_extras" rows="5" cols="30" required>    nothing</textarea> 
+  </p> 
+  
+   <input type="submit" name="Add" value="Add">
+   <a href='/bnb/'>[Cancel]</a>
+ </form>
+</body>
+</html>
