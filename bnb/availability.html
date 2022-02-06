@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang=”en”>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <title>The Haukai Restaurant: Availability</title>
+
+    <!-- Icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Style sheets and theme -->
+    <link rel="stylesheet" href="Style/theme.css">
+    <link rel="stylesheet" href="Style/common-layout.css">
+    <link rel="stylesheet" media="screen and (max-device-width: 660px)" href="Style/mobile-layout.css">
+    <link rel="stylesheet" media="screen and (min-device-width: 661px)" href="Style/desktop-layout.css">
+
+    <!--Javascript-->
+    <script language="JavaScript" type="text/javascript" src="Assets/jquery-3.6.0.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Assets/script.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1 class="brand">The Haukai<br><span class="sub">Restaurant</span></h1>
+        <nav class="topnav" id="navMain">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="availability.html">Availability Calendar</a>
+
+            <!--Dropdown menu-->
+            <div class="dropdown">
+                <button class="dropbtn">Learn <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="under_construction.html">Learn about our food</a>
+                    <a href="under_construction.html">What does it mean? (terminology)</a>
+                    <a href="under_construction.html">Our story</a>
+                </div>
+            </div>
+
+            <a href="contact_us.html">Contact Us</a>
+            <a href="under_construction.html">Staff Login</a>
+
+            <!-- Preload hamburger icon for small screens -->
+            <a href="javascript:void(0);" class="icon" id="hamburger" onclick="responsiveTopNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+
+    <div class="flex-container">
+        <div id="page-head">
+            <h1>Availability Calendar</h1>
+            <object type="image/svg+xml" data="Assets/streak.svg" class="thing" title="Streak image"></object>
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <iframe
+            src="https://calendar.google.com/calendar/embed?src=en.new_zealand%23holiday%40group.v.calendar.google.com&ctz=Pacific%2FAuckland"
+            style="border: 0" width="100%" height="600" frameborder="0" scrolling="no" title="Availabilty calendar"></iframe>
+    </div>
+    <footer>
+        <div class="footer-row row-one">
+            <nav class="footer-nav">
+                <a href="contact_us.html#hours">View our business hours</a>
+                <a href="contact_us.html#contact">Get in touch</a>
+            </nav>
+        </div>
+        <div class="footer-row row-two">
+            <p>By using our website and booking system, you agree to our <a href="privacy_policy.html">privacy
+                    policy</a> and <a href="terms.html">terms and conditions</a>.</p>
+            <p><i class="fa fa-copyright" aria-hidden="true"></i> The Haukai Restaurant 2021</p>
+        </div>
+    </footer>
+</body>
+
+</html>

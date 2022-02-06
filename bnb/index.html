@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang=”en”>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <title>The Haukai Restaurant: Home</title>
+
+    <!-- Icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Style sheets and theme -->
+
+    <!-- <link rel="stylesheet" href="Style/common-layout.css"> -->
+    <!-- <link rel="stylesheet" media="screen and (max-device-width: 660px)" href="Style/mobile-layout.css"> -->
+    <!-- <link rel="stylesheet" media="screen and (min-device-width: 661px)" href="Style/desktop-layout.css"> -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="Style/theme.css">
+    <!--Javascript-->
+    <!-- <script language="JavaScript" type="text/javascript" src="Assets/jquery-3.6.0.js"></script> -->
+    <!-- <script language="JavaScript" type="text/javascript" src="Assets/script.js"></script> -->
+
+</head>
+
+<body>
+
+    <header>
+        <h1 class="brand w3-center">The Haukai<br><span class="sub">Restaurant</span></h1>
+        <nav class="w3-bar w3-light-gray w3-center">
+            <a href="index.html" class="w3-bar-item w3-button w3-mobile w3-text-green">Home</a>
+            <a href="menu.html" class="w3-bar-item w3-button w3-mobile">Menu</a>
+            <a href="availability.html" class="w3-bar-item w3-button w3-mobile">Availability Calendar</a>
+
+            <!--Dropdown menu-->
+
+            <div class="w3-dropdown-hover w3-mobile">
+                <button class="w3-button">Learn <i class="fa fa-caret-down"></i></button>
+
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="under_construction.html" class="w3-bar-item w3-button w3-mobile">Learn about our food</a>
+                    <a href="under_construction.html" class="w3-bar-item w3-button w3-mobile">What does it mean?
+                        (terminology)</a>
+                    <a href="under_construction.html" class="w3-bar-item w3-button w3-mobile">Our story</a>
+                </div>
+            </div>
+
+            <a href="contact_us.html" class="w3-bar-item w3-button w3-mobile">Contact Us</a>
+            <a href="Secure_Login/staff_login.html" class="w3-bar-item w3-button w3-mobile w3-right">Staff Login</a>
+
+            <!-- Preload hamburger icon for small screens -->
+            <!-- <a href="javascript:void(0);" class="icon" id="hamburger" onclick="responsiveTopNav()"> -->
+            <!-- <i class="fa fa-bars"></i> -->
+            <!-- </a> -->
+        </nav>
+    </header>
+
+    <!--Hero image with text and button-->
+
+    <div class="w3-display-container">
+        <picture class="w3-image" style="">
+            <source media="(min-device-width: 701px)" srcset="Assets/banner_table_set.jfif">
+            <source media="(min-device-width: 601px)" srcset="Assets/banner_table_set_700.jpg">
+            <source media="(min-device-width: 501px)" srcset="Assets/banner_table_set_600.jpg">
+            <source media="(min-device-width: 401px)" srcset="Assets/banner_table_set_500.jpg">
+            <source media="(min-device-width: 301px)" srcset="Assets/banner_table_set_400.jpg">
+            <source media="(min-device-width: 201px)" srcset="Assets/banner_table_set_300.jpg">
+            <img src="Assets/banner_table_set_200.jpg" alt="A delightful photo of a nice table setting in a Restaurant."
+                style="height: 500px; width: 100%; overflow: hidden; object-fit: cover; object-position: bottom;">
+        </picture>
+
+        <div class="hero-text w3-display-middle w3-large w3-center">
+            <p class="hero-text-content w3-xlarge" style="color: white;">Specialising in Māori kai</p>
+            <p style="color: white;">You will love it!</p>
+            <button class="w3-round w3-large w3-padding-large w3-button" style="background-color: var(--primary-theme-colour); color: white;" onclick="document.location='booking_form.html'">Book a table</button>
+        </div>
+    </div>
+
+
+
+    <section class="w3-container w3-center">
+        <h1>Today's Specials</h1>
+
+        <div class="w3-cell-row w3-center w3-section w3-mobile">
+            <div class="w3-cell w3-mobile" style="width:50%">
+                <h2>Appetizer</h2>
+                <div class="w3-cell-row">
+                    <h3>rewena bread<span class="price">10</span></h3>
+                    <div class="w3-cell-row w3-mobile">
+                        <div class="w3-container w3-cell-top w3-left-align w3-mobile">
+                            <p>Traditional Māori bread.</p>
+                        </div>
+                        <div class="w3-container w3-cell w3-mobile" style="width:50%">
+                            <img src="Assets/rewena.png" alt="Rewena image" class="w3-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-cell w3-mobile" style="width:50%">
+                <h2>main</h2>
+                <div class="w3-cell-row w3-mobile">
+                    <h3>fish of the day<span class="price">25</span></h3>
+                    <div class="w3-cell-row w3-mobile">
+                        <div class="w3-container w3-cell-top w3-left-align w3-mobile">
+                            <p>Beer battered fish and kumara fries, served with a side salad and homemade tartare. </p>
+                        </div>
+                        <div class="w3-container w3-cell" style="width:50%">
+                            <img src="Assets/main.png" alt="main description" class="w3-image w3-mobile">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="w3-cell-row w3-center  w3-section  w3-mobile">
+            <div class="w3-cell w3-mobile" style="width:50%">
+                <h2>dessert</h2>
+                <div class="w3-cell-row w3-mobile">
+                    <h3>kapiti ice cream<span class="price">10</span></h3>
+                    <div class="w3-cell-row w3-mobile">
+                        <div class="w3-container w3-cell-top w3-left-align w3-mobile">
+                            <p>Check for daily specials. </p>
+                        </div>
+                        <div class="w3-container w3-cell w3-mobile" style="width:50%">
+                            <img src="Assets/dessert.png" alt="dessert description" class="w3-image w3-mobile">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-cell w3-mobile" style="width:50%">
+                <h2>beverages</h2>
+                <div class="w3-cell-row w3-mobile">
+                    <h3>Rainbow Rum Slushie<span class="price">10</span></h3>
+                    <div class="w3-cell-row w3-mobile">
+                        <div class="w3-container w3-cell-top w3-left-align w3-mobile">
+                            <p>Rum made real fancy like. Today only! </p>
+                        </div>
+                        <div class="w3-container w3-cell w3-mobile" style="width:50%">
+                            <img src="Assets/rainbow.png" alt="dessert description" class="w3-image w3-mobile">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="w3-container w3-section">
+            <p class="w3-xlarge">Get in and have a feast.</p>
+            <button class="w3-round w3-large w3-padding-large w3-button" style="background-color: var(--primary-theme-colour); color: white;" onclick="document.location='booking_form.html'">Book Now!</button>
+        </div>
+
+
+        <footer class="w3-container w3-center">
+            <div class="w3-cell-row w3-center">
+                <nav class="footer-nav">
+                    <a href="contact_us.html#hours">View our business hours</a>
+                    <a href="contact_us.html#contact">Get in touch</a>
+                </nav>
+            </div>
+    
+            <div class="w3-cell-row w3-center">
+                <div class="w3-cell">
+                    <p>By using our website and booking system, you agree to our <a href="privacy_policy.html">privacy
+                            policy</a> and <a href="terms.html">terms and conditions</a>.</p>
+                    <p><i class="fa fa-copyright" aria-hidden="true"></i> The Haukai Restaurant 2021</p>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>

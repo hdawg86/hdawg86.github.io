@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang=”en”>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <title>The Haukai Restaurant: Menu</title>
+
+    <!-- Icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Style sheets and theme -->
+    <link rel="stylesheet" href="Style/theme.css">
+    <link rel="stylesheet" href="Style/common-layout.css">
+    <link rel="stylesheet" media="screen and (max-device-width: 660px)" href="Style/mobile-layout.css">
+    <link rel="stylesheet" media="screen and (min-device-width: 661px)" href="Style/desktop-layout.css">
+
+    <!--Javascript-->
+    <script language="JavaScript" type="text/javascript" src="Assets/jquery-3.6.0.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Assets/script.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1 class="brand">The Haukai<br><span class="sub">Restaurant</span></h1>
+        <nav class="topnav" id="navMain">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="availability.html">Availability Calendar</a>
+
+            <!--Dropdown menu-->
+            <div class="dropdown">
+                <button class="dropbtn">Learn <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="under_construction.html">Learn about our food</a>
+                    <a href="under_construction.html">What does it mean? (terminology)</a>
+                    <a href="under_construction.html">Our story</a>
+                </div>
+            </div>
+
+            <a href="contact_us.html">Contact Us</a>
+            <a href="under_construction.html">Staff Login</a>
+
+            <!-- Preload hamburger icon for small screens -->
+            <a href="javascript:void(0);" class="icon" id="hamburger" onclick="responsiveTopNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+
+    <div class="flex-container">
+        <div id="page-head"> 
+            <h1>Menu</h1>
+            <object type="image/svg+xml" data="Assets/streak.svg" class="thing" title="Streak image"></object>
+        </div>
+    </div>
+
+    <section class="flex-container">
+        <h2>Appetizer</h2>
+
+        <div class="flex-container">
+
+
+            <div class="menu">
+                <div class="inner-container">
+                    <h3>rewena bread<span class="price">10</span></h3>
+                    <div class="flex-container">
+                        <p>Traditional Māori bread. </p>
+                        <img src="Assets/rewena.png" alt="Rewena image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu">
+                <div class="inner-container">
+                    <h3>paua fritter<span class="price">16</span></h3>
+                    <div class="flex-container">
+                        <p>Finely diced pieces of paua, served with a side salad and horopito dressing.</p>
+                        <img src="Assets/Appetizers.png" alt="Appetizers description">
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu">
+                <div class="inner-container">
+                    <h3>raw fish<span class="price">20</span></h3>
+                    <div class="flex-container">
+                        <p>Dried snapper fish marinated in coconut cream, served with tomatoes and spring onions.</p>
+                        <img src="Assets/Appetizers.png" alt="Appetizers description">
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu">
+                <div class="inner-container">
+                    <h3>seafood basket<span class="price">25</span></h3>
+                    <div class="flex-container">
+                        <p>Crumbed mussels, salt and pepper squid, crumbed hoki bites and garlic prawns. </p>
+                        <img src="Assets/Appetizers.png" alt="Appetizers description">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="flex-container">
+        <h2>main</h2>
+
+        <div class="flex-container">
+
+            <div class="menu">
+                <div class="inner-container">
+                    <h3>fish of the day<span class="price">25</span></h3>
+                    <div class="flex-container">
+                        <p>Beer battered fish and kumara fries, served with a side salad and homemade tartare. </p>
+                        <img src="Assets/main.png" alt="main description">
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu">
+                <div class="inner-container">
+                    <h3>mussels and scallops<span class="price">30</span></h3>
+                    <div class="flex-container">
+                        <p>Steamed mussel & scallop mousse, honey and soy broth. </p>
+                        <img src="Assets/main.png" alt="main description">
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu">
+                <div class="inner-container">
+                    <h3>seafood chowder<span class="price">30</span></h3>
+                    <div class="flex-container">
+                        <p>Creamy chowder filled with terakihi, prawn, hoki, scallops and mussels, served with
+                            flatbread.
+                        </p>
+                        <img src="Assets/main.png" alt="main description">
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu">
+                <div class="inner-container">
+                    <h3>pork belly<span class="price">30</span></h3>
+                    <div class="flex-container">
+                        <p>Slow cooked pork belly served on a bed of apple slaw with roasted kumara, and crispy noodle.
+                        </p>
+                        <img src="Assets/main.png" alt="main description">
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu">
+                <div class="inner-container">
+                    <h3>lamb steak<span class="price">33</span></h3>
+                    <div class="flex-container">
+                        <p>New Zealand Lamb coated in a kawakawa crumb, served with Dijon mustard glazed carrots,
+                            roasted
+                            butternut squash and a mushroom Jus. </p>
+                        <img src="Assets/main.png" alt="main description">
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu">
+                <div class="inner-container">
+                    <h3>venison<span class="price">33</span></h3>
+                    <div class="flex-container">
+                        <p>Venison crusted with horopito, served with glazed plums, cabbage salad and red wine Jus. </p>
+                        <img src="Assets/main.png" alt="main description">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="flex-container">
+        <h2>dessert</h2>
+
+        <div class="flex-container">
+
+            <div class="menu">
+                <div class="inner-container">
+                    <h3>kapiti ice cream<span class="price">10</span></h3>
+                    <div class="flex-container">
+                        <p>Check for daily specials. </p>
+                        <img src="Assets/dessert.png" alt="dessert description">
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu">
+                <div class="inner-container">
+                    <h3>steam pudding<span class="price">12</span></h3>
+                    <div class="flex-container">
+                        <p>Golden syrup flavoured steam pudding, served with vanilla ice cream </p>
+                        <img src="Assets/dessert.png" alt="dessert description">
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu">
+                <div class="inner-container">
+                    <h3>min pavlova<span class="price">16</span></h3>
+                    <div class="flex-container">
+                        <p>Mini Pavlova served with kawakawa and lemon infused cream and fresh fruit. </p>
+                        <img src="Assets/dessert.png" alt="dessert description">
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu">
+                <div class="inner-container">
+                    <h3>banoffee pie<span class="price">16</span></h3>
+                    <div class="flex-container">
+                        <p>Toffee, fresh bananas and fresh cream. </p>
+                        <img src="Assets/dessert.png" alt="dessert description">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="flex-container">
+        <h2>beverages</h2>
+
+        <div class="flex-container">
+
+            <div class="menu">
+                <div class="inner-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>
+                                    <h3>red</h3>
+                                </td>
+                                <td>
+                                    <h3 class="price">B/G</h3>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Terrace Edge Pinot Noir, 2012, Wairarapa</td>
+                                <td class="price">53/13</td>
+                            </tr>
+                            <tr>
+                                <td>Altitude Pinot Noir, 2010, Marlborough </td>
+                                <td class="price">64/15</td>
+                            </tr>
+                            <tr>
+                                <td>Greystone Pinot Noir, 2012, Wairarapa</td>
+                                <td class="price">73/17</td>
+                            </tr>
+                            <tr>
+                                <td>Terrace Edge, Syrah, 2012 Wairarapa </td>
+                                <td class="price">53/13</td>
+                            </tr>
+                            <tr>
+                                <td>Altitude Syrah, 2010 Marlborough </td>
+                                <td class="price">64/15</td>
+                            </tr>
+                            <tr>
+                                <td>Greystone Syrah, 2012, Wairarapa </td>
+                                <td class="price">73/17</td>
+                            </tr>
+                            <tr>
+                                <td>Pegasus Bay Merlot, 2013, Waipara</td>
+                                <td class="price">65/14</td>
+                            </tr>
+                            <tr>
+                                <td>Pegasus Bay Pinot Noir, 2013, Waipara </td>
+                                <td class="price">110</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="menu">
+                <div class="inner-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>
+                                    <h3>white</h3>
+                                </td>
+                                <td>
+                                    <h3 class="price">B/G</h3>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Spade Oak Pinot Gris, 2011, Gisborne</td>
+                                <td class="price">40/10</td>
+                            </tr>
+                            <tr>
+                                <td>Maude Pinot Gris, 2017, Otago</td>
+                                <td class="price">49.50/11</td>
+                            </tr>
+                            <tr>
+                                <td>Charles Wiffen Chardonnay, 2013, Otago</td>
+                                <td class="price">48/11</td>
+                            </tr>
+                            <tr>
+                                <td>Amisfield, Riesling, 2016, Otago</td>
+                                <td class="price">53/12</td>
+                            </tr>
+                            <tr>
+                                <td>Lamont Riesling, 2010, Otago</td>
+                                <td class="price">57/13</td>
+                            </tr>
+                            <tr>
+                                <td>Elephant Hill Viognier, 2013, Hawkes Bay</td>
+                                <td class="price">55/12</td>
+                            </tr>
+                            <tr>
+                                <td>Folium Sauvignon Blanc, 2011, Marlborough</td>
+                                <td class="price">52/11</td>
+                            </tr>
+                            <tr>
+                                <td>Billecart-Salmon Brut Reserve, France</td>
+                                <td class="price">120</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="menu">
+                <div class="inner-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>
+                                    <h3>beer and cider</h3>
+                                </td>
+                                <td>
+                                    <h3 class="price"></h3>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Garage project range</td>
+                                <td class="price">11</td>
+                            </tr>
+                            <tr>
+                                <td>Tuatara range</td>
+                                <td class="price">11</td>
+                            </tr>
+                            <tr>
+                                <td>Panhead range</td>
+                                <td class="price">10</td>
+                            </tr>
+                            <tr>
+                                <td>Coopers Ale</td>
+                                <td class="price">10</td>
+                            </tr>
+                            <tr>
+                                <td>Heineken</td>
+                                <td class="price">11</td>
+                            </tr>
+                            <tr>
+                                <td>Moa Cider</td>
+                                <td class="price">10</td>
+                            </tr>
+                            <tr>
+                                <td>Crooked Cider</td>
+                                <td class="price">10</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="menu">
+                <div class="inner-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>
+                                    <h3>non-alcoholic</h3>
+                                </td>
+                                <td>
+                                    <h3 class="price"></h3>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mineral water</td>
+                                <td class="price">4</td>
+                            </tr>
+                            <tr>
+                                <td>Soft drinks</td>
+                                <td class="price">4</td>
+                            </tr>
+                            <tr>
+                                <td>Juice</td>
+                                <td class="price">4</td>
+                            </tr>
+                            <tr>
+                                <td>Coffee</td>
+                                <td class="price">4.50</td>
+                            </tr>
+                            <tr>
+                                <td>Tea</td>
+                                <td class="price">3.50</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="nudge" style="margin: 25px;">
+        <p style="font-size: x-large;  margin: 5px;">Get in and have a feast.</p>
+        <button onclick="document.location='/booking_form.html'">Book Now!</button>
+    </div>
+
+    <footer>
+        <div class="footer-row row-one">
+            <nav class="footer-nav">
+                <a href="contact_us.html#hours">View our business hours</a>
+                <a href="contact_us.html#contact">Get in touch</a>
+            </nav>
+        </div>
+        <div class="footer-row row-two">
+            <p>By using our website and booking system, you agree to our <a href="privacy_policy.html">privacy
+                    policy</a> and <a href="terms.html">terms and conditions</a>.</p>
+            <p><i class="fa fa-copyright" aria-hidden="true"></i> The Haukai Restaurant 2021</p>
+        </div>
+    </footer>
+</body>
+
+</html>
